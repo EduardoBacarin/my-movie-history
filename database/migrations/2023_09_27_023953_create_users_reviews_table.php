@@ -11,15 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('users_reviews', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->string('image');
-            $table->enum('level', ['admin', 'user']);
-            $table->rememberToken();
+            $table->foreignId("users_id")->references('id')->on('users');
+            $table->foreignId("movies_id")->references('id')->on('movies');
+            $table->integer("stars");
+            $table->string("comment", 240)->nullable();
             $table->timestamps();
         });
     }
@@ -29,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('users_reviews');
     }
 };
