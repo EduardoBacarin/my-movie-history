@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Comedy",
+        "image": "",
+        "description": "https://cdn3.vectorstock.com/i/1000x1000/57/67/movie-genre-comedy-cinema-icon-of-clown-vector-17935767.jpg"
+    },
+    {
+        "name": "Fantasy",
+        "image": "https://timothyrjeveland.com/wp-content/uploads/2019/04/the-historic-origins-of-the-fantasy-genre-explained.jpg",
+        "description": ""
+    },
+    {
+        "name": "Crime",
+        "image": "https://storygrid.com/wp-content/uploads/2022/05/Crime-Genre.jpg",
+        "description": ""
+    },
+    {
+        "name": "Drama",
+        "image": "https://www.filmsite.org/images/drama-genre.jpg",
+        "description": ""
+    },
+    {
+        "name": "Music",
+        "image": "https://www.servomagazine.com/uploads/articles/SV_0220_Keshri_Large.jpg",
+        "description": ""
+    },
+    {
+        "name": "Adventure",
+        "image": "https://unitingartists.org/wp-content/uploads/2020/06/Adventure-Genre.jpg",
+        "description": ""
+    },
+    {
+        "name": "Thriller",
+        "image": "https://storygrid.com/wp-content/uploads/2022/05/Copy-of-Love-Genre-1-1024x1024.png",
+        "description": ""
+    },
+    {
+        "name": "Action",
+        "image": "https://storygrid.com/wp-content/uploads/2022/07/Action-Genre.png",
+        "description": ""
+    },
+    {
+        "name": "Animation",
+        "image": "https://www.filmsite.org/images/animated-genre.jpg",
+        "description": ""
+    },
+    {
+        "name": "Horror",
+        "image": "https://storygrid.com/wp-content/uploads/2022/05/Copy-of-Love-Genre.png",
+        "description": ""
+    },
+    {
+        "name": "Others",
+        "image": "https://as2.ftcdn.net/v2/jpg/03/25/92/53/1000_F_325925368_wBODbATNwNbSezus2hZ8HUcvwgQ1o9Nb.jpg",
+        "description": ""
+    }
+]

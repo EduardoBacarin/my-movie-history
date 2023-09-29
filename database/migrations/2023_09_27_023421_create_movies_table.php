@@ -19,10 +19,10 @@ return new class extends Migration
             $table->string("banner", 250);
             $table->string("cover", 250);
             $table->longText("sinopsys");
-            $table->date("release_date");
-            $table->string("imdb_url", 250);
-            $table->string("country", 250);
-            $table->time("lenght");
+            $table->date("release_date")->nullable();
+            $table->string("imdb_url", 250)->nullable();
+            $table->string("country", 250)->nullable();
+            $table->string("lenght")->nullable();
             $table->timestamps();
         });
     }

@@ -1,7 +1,10 @@
 <?php
 
-namespace App\Models;
+/**
+ * Created by Reliese Model.
+ */
 
+namespace App\Models;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -17,11 +20,17 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+
+	protected $fillable = [
+		'name',
+		'email',
+		'email_verified_at',
+		'password',
+		'image',
+		'level',
+		'remember_token'
+	];
+
 
     /**
      * The attributes that should be hidden for serialization.
@@ -42,4 +51,16 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+	public function movies()
+	{
+		return $this->belongsToMany(Movie::class, 'user_has_movies', 'users_id', 'movies_id')
+					->withPivot('id', 'watched')
+					->withTimestamps();
+	}
+
+	public function users_reviews()
+	{
+		return $this->hasMany(UsersReview::class, 'users_id');
+	}
 }
